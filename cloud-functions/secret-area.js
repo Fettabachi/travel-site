@@ -1,7 +1,7 @@
 exports.handler = function (event, context, callback) {
     const secretContent = `
         <h3>Welcome To The Secret Zone</h3>
-        <p>Here we can tell you that the sky is <strong>blue</strong>, and the grass is green.</p>
+        <p>Here we can tell you that this content was returned by running a cloud function on Netlify.</p>
     `
 
   let body;
