@@ -1,6 +1,25 @@
-exports.handler = function(event, context, callback) {
+exports.handler = function (event, context, callback) {
+    const secretContent = `
+        <h3>Welcome To The Secret Zone</h3>
+        <p>Here we can tell you that the sky is <strong>blue</strong>, and the grass is green.</p>
+    `
+
+  let body;
+
+  if (event.body) {
+    body = JSON.parse(event.body);
+  } else {
+    body = {};
+  }
+
+  if (body.password == "javascript") {
     callback(null, {
-        statusCode: 200,
-        body: "Welcome to the supersecret area"
-    })
-}
+      statusCode: 200,
+      body: secretContent
+    });
+  } else {
+    callback(null, {
+      statusCode: 410,
+    });
+  }
+};
