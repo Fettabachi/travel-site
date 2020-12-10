@@ -3,6 +3,11 @@ import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
 
+// use for local testing of the Client area feature
+// see also secret-area.js
+// import ClientArea from "./modules/ClientArea"
+// new ClientArea()
+
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 new MobileMenu();
