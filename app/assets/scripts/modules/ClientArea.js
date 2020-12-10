@@ -21,7 +21,7 @@ class ClientArea {
         this.form.remove()
         this.contentArea.innerHTML = response.data
     }).catch(() => {
-        this.contentArea.innerHTML = `<p class="client-area__error">That secret phrase is not correct. Try again.</p>`
+        this.contentArea.innerHTML = `<p class="client-area__error">That secret phrase is not correct. This is a very simple example of using a cloud function which returns a response based on the value submitted above. Try using "javascript".</p>`
         this.field.value = ''
         this.field.focus()
     })
