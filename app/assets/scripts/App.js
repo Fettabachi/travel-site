@@ -18,17 +18,19 @@ ReactDOM.render(
 // import ClientArea from "./modules/ClientArea"
 // new ClientArea()
 
+// comment the following out to render the ClientArea on localhost
+if (document.URL.indexOf("zen-meitner-405009.netlify.app") >= 0) {
+  import("./modules/ClientArea").then((x) => {
+    ClientArea = new x.default();
+  });
+}
+
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 new MobileMenu();
 new StickyHeader();
 let modal;
 
-if (document.URL.indexOf("zen-meitner-405009.netlify.app") >= 0) {
-  import("./modules/ClientArea").then((x) => {
-    ClientArea = new x.default();
-  });
-}
 
 document.querySelectorAll(".open-modal").forEach((el) => {
   el.addEventListener("click", (e) => {

@@ -1,7 +1,7 @@
 exports.handler = function (event, context, callback) {
     const secretContent = `
         <h3>Welcome To The Secret Zone</h3>
-        <p>Here we can tell you that this content was returned by running a cloud function on Netlify.</p>
+        <p>This content was returned by running a serverless function on Netlify.</p>
     `
 
   let body;
@@ -40,8 +40,8 @@ exports.handler = function (event, context, callback) {
 //   }
   
 //   const secretContent = `
-//   <h3>Welcome To The Secret Area</h3>
-//   <p>Here we can tell you that the sky is <strong>blue</strong>, and two plus two equals four.</p>
+//   <h3>Welcome To The Secret Zone</h3>
+//   <p>This content was returned by running a serverless function on Netlify.</p>
 //   `
   
 //   let body

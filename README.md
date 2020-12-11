@@ -46,3 +46,5 @@ Build the dist package
 ```sh
 $ npm run build
 ```
+#### Note to self
+>The ClientArea module will not work on your local machine without some code modification. See the comments in App.js and /cloud-functions/secret-area.js
