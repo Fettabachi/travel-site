@@ -42,6 +42,8 @@ View the app in your favorite browser. You can change the port in webpack.config
 ```sh
 http://localhost:4000
 ```
+![](magic-giphy.gif)
+
 Build the dist package
 ```sh
 $ npm run build
