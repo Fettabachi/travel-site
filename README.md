@@ -22,7 +22,7 @@ This is a single, static, HTML page built using modern skills, tools, and best p
   - Utilize webpack to run the dev environment and to build the distribution package
   - Utilize Netlify to add a simple cloud function
   - Integrated React into the workflow
-  - Utilize Netlify to hook into the GitHub repository and build/publish the page whenever a new commit is pushed to master. [View page](https://zen-meitner-405009.netlify.app/)
+  - Utilize Netlify to hook into the GitHub repository and build/publish the page whenever a new commit is pushed to master. [View page](https://travel-site-app.netlify.app/)
   
 ### Installation
 This app requires Node.js to run.
@@ -40,7 +40,7 @@ $ npm run dev
 ```
 View the app in your favorite browser. You can change the port in webpack.config.js
 ```sh
-http://localhost:4000
+http://localhost:4001
 ```
 ![](magic-giphy.gif)
 
